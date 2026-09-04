@@ -1,0 +1,18 @@
+/* Phase 0: Diagonal Panning full-screen overlay */
+.comic-pan-box {
+    background-image: url('/comic-pan.webp');
+    background-size: 200%;
+    background-position: 0% 0%;
+    animation: comicPan 3s ease-in-out forwards, glitchFilter 0.15s infinite alternate;
+}
+
+@keyframes comicPan {
+    0% { background-position: 0% 0%; }
+    50% { background-position: 100% 100%; }
+    100% { background-position: 50% 100%; }
+}
+
+@keyframes glitchFilter {
+    0% { filter: grayscale(100%) contrast(150%) brightness(0.8); }
+    100% { filter: grayscale(80%) sepia(40%) hue-rotate(320deg) contrast(200%) brightness(1.2); }
+}
