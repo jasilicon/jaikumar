@@ -36,7 +36,7 @@ export default function Contact() {
                 </svg>
             ),
             label: 'Email',
-            value: 'jaikumarkpv@gmail.com',
+            value: 'jaikumar.developer.official@gmail.com',
         },
         {
             icon: (
